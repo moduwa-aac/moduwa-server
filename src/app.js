@@ -2,6 +2,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import categoryRouter from "./category/category.route.js";
+import orderRouter from "./order/order.route.js";
 import {
   AiPredictionTimeoutError,
   UnauthorizedError,
@@ -56,6 +57,16 @@ app.use("/api/categories", categoryRouter);
 //     next();
 //   },
 //   categoryRouter,
+// );
+app.use("/api/order", orderRouter);
+// PM03 테스트용 : 인증 우회
+// app.use(
+//   "/api/order",
+//   (req, res, next) => {
+//     req.user = { userId: "dev-test-user" };
+//     next();
+//   },
+//   orderRouter,
 // );
 
 // 3. 테스트용 라우트
