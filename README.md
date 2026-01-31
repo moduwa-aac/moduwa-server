@@ -70,7 +70,8 @@ moduwa-server
 └── README.md             # 프로젝트 문서
 ```
 
-# 🏗️ Server Architecture
+## 🏗️ Server Architecture
+<img width="1980" height="900" alt="aac drawio" src="https://github.com/user-attachments/assets/3a74d60c-26f6-4022-a48c-4c3d1d5371a6" />
 
 ---
 
